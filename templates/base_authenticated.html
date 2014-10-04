@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block base_body %}
+    <div class="top-header">
+        <div class="logo">TNH</div>
+        <div class="account">
+            Panu Tangchalermkul
+        </div>
+    </div>
+    <div class="top-navigation">
+        <ul>
+            <li><a href="#">Weaving</a></li>
+            <li><a href="#">Database</a></li>
+        </ul>
+    </div>
+    <div class="top-breadcruumb">
+        <span class="parent">Weaving</span>
+        <span class="separator">/</span>
+        <span class="current">Weaving Table</span>
+    </div>
+
+    <div class="authenticated-body">
+        {% block authenticated_body %}{% endblock %}
+    </div>
+{% endblock %}
